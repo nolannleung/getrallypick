@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://getrallypick.com/sitemap.xml
