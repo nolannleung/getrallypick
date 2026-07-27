@@ -230,7 +230,7 @@ function recommend() {
   top.forEach((r, i) => {
     const pct = Math.max(62, Math.min(99, 60 + Math.round((r.s / (maxS||1)) * 38)));
     const whyTxt = r.reasons.length ? r.reasons.join(" · ") + ". " + r.p.why : r.p.why;
-    const usLink = "https://www.amazon.com/s?k=" + encodeURIComponent(r.p.name);
+    const usLink = "https://www.amazon.com/s?k=" + encodeURIComponent(r.p.name) + "&tag=getrallypick-20";
     const el = document.createElement('div');
     el.className = 'res r' + (i+1);
     el.innerHTML = `
