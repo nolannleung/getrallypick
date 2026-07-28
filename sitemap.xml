@@ -86,6 +86,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://getrallypick.com/reviews/crbn-1x-power-series.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getrallypick.com/reviews/engage-encore-pro-mx-6.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://getrallypick.com/about.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
