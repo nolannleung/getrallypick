@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-brand="volt" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>CRBN-1X Power Series Review — getrallypick</title>
 <meta name="description" content="An independent, spec-verified review of the CRBN-1X Power Series pickleball paddle: who it fits, pros and cons, and how it plays.">
 <link rel="stylesheet" href="../assets/style.css">
@@ -20,12 +21,20 @@
 <header class="site">
   <div class="wrap">
     <div class="logo">getrally<span class="accent">pick</span></div>
-    <nav class="main">
+        <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+<nav class="main">
       <a href="../index.html">Home</a>
       <a href="../paddle-matcher.html">Paddle Matcher</a>
-      <a href="../paddles.html">Reviews</a>
+      <a href="../paddles.html" class="active">Reviews</a>
       <a href="../learn/index.html">Learn</a>
     </nav>
+    <div class="switcher">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light or dark">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button></div>
+    </div>
   </div>
 </header>
 
@@ -35,23 +44,23 @@
 
   <p>The 1X is CRBN's answer to one question: how do you add pace without giving up the spin a raw-carbon face is known for? It leans into drives and put-aways while keeping enough touch for the kitchen. If the all-court benchmarks feel a little tame, this is the paddle that turns up the volume, and the elongated shape gives you extra reach at the net.</p>
 
-  <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;background:#f3f9f5;border:1px solid #d9ebe1;border-radius:12px;padding:14px 16px;margin:14px 0;">
-    <div style="font-size:30px;font-weight:800;color:#0c8a4e;line-height:1;">4.5<span style="font-size:14px;color:#6b7a72;font-weight:600;">/5</span></div>
+  <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center;background:var(--brand-050);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:14px 0;">
+    <div style="font-size:30px;font-weight:800;color:var(--brand-strong);line-height:1;">4.5<span style="font-size:14px;color:var(--text-muted);font-weight:600;">/5</span></div>
     <div style="flex:1;min-width:210px;">
-      <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#36453d;">
+      <div style="display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--text-2);">
         <span><b>Power</b> 4.7</span><span><b>Control</b> 4.2</span><span><b>Spin</b> 4.6</span><span><b>Feel</b> 4.3</span><span><b>Value</b> 4.2</span>
       </div>
-      <div style="font-size:12px;color:#6b7a72;margin-top:5px;">Scores from hands-on play, weighted against manufacturer specs.</div>
+      <div style="font-size:12px;color:var(--text-muted);margin-top:5px;">Scores from hands-on play, weighted against manufacturer specs.</div>
     </div>
   </div>
 
   <h2>Specs at a glance</h2>
   <table style="width:100%;border-collapse:collapse;font-size:14px;margin:10px 0;">
-    <tr style="border-bottom:1px solid #e3ebe6;"><td style="padding:7px 0;font-weight:600;">Core</td><td style="padding:7px 0;">16mm polymer honeycomb (13mm also offered)</td></tr>
-    <tr style="border-bottom:1px solid #e3ebe6;"><td style="padding:7px 0;font-weight:600;">Face</td><td style="padding:7px 0;">Raw T700 carbon fiber</td></tr>
-    <tr style="border-bottom:1px solid #e3ebe6;"><td style="padding:7px 0;font-weight:600;">Shape</td><td style="padding:7px 0;">Elongated (1X)</td></tr>
-    <tr style="border-bottom:1px solid #e3ebe6;"><td style="padding:7px 0;font-weight:600;">Weight</td><td style="padding:7px 0;">7.8–8.2 oz</td></tr>
-    <tr style="border-bottom:1px solid #e3ebe6;"><td style="padding:7px 0;font-weight:600;">Best for</td><td style="padding:7px 0;">Intermediate to advanced, power seekers</td></tr>
+    <tr style="border-bottom:1px solid var(--border);"><td style="padding:7px 0;font-weight:600;">Core</td><td style="padding:7px 0;">16mm polymer honeycomb (13mm also offered)</td></tr>
+    <tr style="border-bottom:1px solid var(--border);"><td style="padding:7px 0;font-weight:600;">Face</td><td style="padding:7px 0;">Raw T700 carbon fiber</td></tr>
+    <tr style="border-bottom:1px solid var(--border);"><td style="padding:7px 0;font-weight:600;">Shape</td><td style="padding:7px 0;">Elongated (1X)</td></tr>
+    <tr style="border-bottom:1px solid var(--border);"><td style="padding:7px 0;font-weight:600;">Weight</td><td style="padding:7px 0;">7.8–8.2 oz</td></tr>
+    <tr style="border-bottom:1px solid var(--border);"><td style="padding:7px 0;font-weight:600;">Best for</td><td style="padding:7px 0;">Intermediate to advanced, power seekers</td></tr>
   </table>
 
   <h2>What stood out</h2>
@@ -73,21 +82,32 @@
   <h2>Verdict</h2>
   <p><span class="pill">Best for driving power</span> A raw-carbon paddle that finally prioritizes pace without going numb at the net.</p>
 
-  <p style="margin-top:12px;"><a href="https://www.amazon.com/s?k=CRBN+1X+Power+Series+pickleball+paddle&tag=getrallypick-20" style="display:inline-block;background:#0c8a4e;color:#fff;padding:9px 14px;border-radius:9px;text-decoration:none;font-weight:600;font-size:14px;">Check current price on Amazon →</a></p>
+  <p style="margin-top:12px;"><a href="https://www.amazon.com/s?k=CRBN+1X+Power+Series+pickleball+paddle&tag=getrallypick-20" style="display:inline-block;background:var(--accent);color:var(--on-accent);padding:9px 14px;border-radius:9px;text-decoration:none;font-weight:600;font-size:14px;">Check current price on Amazon →</a></p>
 
-  <p style="font-size:12.5px;color:#8a978f;margin-top:16px;border-top:1px solid #e3ebe6;padding-top:10px;"><b>Sources.</b> Specs verified against CRBN's official product page (1X Power Series). getrallypick may earn a commission from partner links. Testing is independent and never paid for. See our <a href="../disclosure.html" style="color:#0c8a4e;">disclosure</a>.</p>
+  <p style="font-size:12.5px;color:var(--text-muted);margin-top:16px;border-top:1px solid var(--border);padding-top:10px;"><b>Sources.</b> Specs verified against CRBN's official product page (1X Power Series). getrallypick may earn a commission from partner links. Testing is independent and never paid for. See our <a href="../disclosure.html" style="color:var(--brand-strong);">disclosure</a>.</p>
 
-  <p style="margin-top:10px;"><a href="../paddles.html">← Back to all reviews</a> · <a href="../paddle-matcher.html">Find your match →</a></p>
-  <p style="margin-top:8px;font-size:13px;color:#6b7a72;">Buying guides: <a href="../roundups/best-pickleball-paddles-for-beginners.html">Beginners</a> · <a href="../roundups/best-pickleball-paddles-under-100.html">Under $100</a> · <a href="../roundups/best-pickleball-paddles-for-power.html">Power</a> · <a href="../roundups/best-pickleball-paddles-for-control-and-spin.html">Control &amp; Spin</a></p>
+  <p style="margin-top:10px;"><a href="../paddles.html">← Back to all reviews</a> · <a class="more" href="../paddle-matcher.html">Find your match <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  <p style="margin-top:8px;font-size:13px;color:var(--text-muted);">Buying guides: <a href="../roundups/best-pickleball-paddles-for-beginners.html">Beginners</a> · <a href="../roundups/best-pickleball-paddles-under-100.html">Under $100</a> · <a href="../roundups/best-pickleball-paddles-for-power.html">Power</a> · <a href="../roundups/best-pickleball-paddles-for-control-and-spin.html">Control &amp; Spin</a></p>
 </article>
 
 <footer class="site">
   <div class="wrap">
-    <div>© 2026 getrallypick · Pickleball paddle guides &amp; reviews</div>
-    <div style="flex-basis:100%;margin-top:8px;font-size:12px;color:#8a978f;">As an Amazon Associate, I earn from qualifying purchases.</div>
-    <div><a href="../about.html">About</a> · <a href="../privacy.html">Privacy</a> · <a href="../terms.html">Terms</a> · <a href="../contact.html">Contact</a> · <a href="../disclosure.html">Disclosure</a> · <a href="../paddle-matcher.html">Paddle Matcher</a></div>
+    <div>&copy; 2026 getrallypick &middot; Pickleball paddle guides &amp; reviews</div>
+    <div style="flex-basis:100%;margin-top:8px;font-size:12px;color:var(--text-muted);">As an Amazon Associate, I earn from qualifying purchases.</div>
+    <div class="links"><a href="../about.html">About</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../disclosure.html">Disclosure</a> &middot; <a href="../paddle-matcher.html">Paddle Matcher</a></div>
   </div>
-</footer>
-
+</footer><div class="mobile-menu" id="mobileMenu">
+  <div class="mm-head">
+    <div class="mm-logo">getrally<span class="accent">pick</span></div>
+    <button class="mm-close" id="menuClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../paddle-matcher.html">Paddle Matcher</a>
+    <a href="../paddles.html" class="active">Reviews</a>
+    <a href="../learn/index.html">Learn</a>
+  </nav>
+  </div>
+</div>  <script src="../assets/theme.js"></script>
 </body>
 </html>
