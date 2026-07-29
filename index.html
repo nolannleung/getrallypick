@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-brand="volt" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>getrallypick — Find Your Pickleball Paddle (For Every Player)</title>
 <meta name="description" content="getrallypick helps every pickleball player find the right paddle. Use our free matcher, read beginner guides and independent paddle reviews.">
 <link rel="stylesheet" href="assets/style.css">
@@ -21,19 +22,41 @@
 <header class="site">
   <div class="wrap">
     <div class="logo">getrally<span class="accent">pick</span></div>
-    <nav class="main">
+        <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+<nav class="main">
       <a href="index.html" class="active">Home</a>
       <a href="paddle-matcher.html">Paddle Matcher</a>
       <a href="paddles.html">Reviews</a>
       <a href="learn/index.html">Learn</a>
     </nav>
+    <div class="switcher">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light or dark">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button></div>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <h1>Find the pickleball paddle that fits <em>your</em> game</h1>
-  <p>For every player, any level — beginners to tournament regulars. Answer 5 quick questions and get 3 paddles matched to your style, budget and skill. No accounts, no fluff.</p>
-  <a class="btn" href="paddle-matcher.html">Match me a paddle →</a>
+<section class="hero hero--split">
+  <div class="wrap">
+    <span class="eyebrow-tag" style="--d:0">For US pickleball players</span>
+    <h1 style="--d:1">Find the paddle that fits <em>your</em> game</h1>
+    <p style="--d:2">For every player, any level — beginners to tournament regulars. Answer 5 quick questions and get 3 paddles matched to your style, budget and skill. No accounts, no fluff.</p>
+    <div class="cta-row" style="--d:3">
+      <a class="btn btn-primary" href="paddle-matcher.html">Match me a paddle →</a>
+      <a class="btn btn-ghost" href="paddles.html">Browse reviews</a>
+    </div>
+    <div class="hero-visual" style="--d:4">
+      <div class="stat-card">
+        <div class="stat"><span class="stat-num">60+</span><span class="stat-label">paddles scored on real specs — not on who pays us</span></div>
+        <div class="stat"><span class="stat-num">5 min</span><span class="stat-label">to your matched shortlist of 3 paddles</span></div>
+        <div class="stat"><span class="stat-num">US only</span><span class="stat-label">pricing, court info and Amazon US links</span></div>
+      </div>
+      <span class="hero-badge">⚡ Independent. Not for sale.</span>
+    </div>
+  </div>
 </section>
 
 <div class="wrap">
@@ -43,15 +66,15 @@
     <div class="grid cols-3">
       <div class="card">
         <h3>🎯 Matched, not marketed</h3>
-        <p style="font-size:14px;color:#3a4740;">Our matcher scores 20+ paddles on real specs — swing weight, twist weight, grit retention, core type — not on who pays us most.</p>
+        <p style="font-size:14px;color:var(--text-2);">Our matcher scores 60+ paddles on real specs — swing weight, twist weight, grit retention, core type — not on who pays us most.</p>
       </div>
       <div class="card">
         <h3>📚 Built on original guides</h3>
-        <p style="font-size:14px;color:#3a4740;">Every recommendation links to a written guide or review you can actually learn from — not just a buy button.</p>
+        <p style="font-size:14px;color:var(--text-2);">Every recommendation links to a written guide or review you can actually learn from — not just a buy button.</p>
       </div>
       <div class="card">
         <h3>🌎 For the US</h3>
-        <p style="font-size:14px;color:#3a4740;">Pricing, availability and court info tailored to US players. Amazon US links provided.</p>
+        <p style="font-size:14px;color:var(--text-2);">Pricing, availability and court info tailored to US players. Amazon US links provided.</p>
       </div>
     </div>
   </div>
@@ -61,12 +84,12 @@
     <div class="grid cols-2">
       <div class="card">
         <h3>New to the sport?</h3>
-        <p style="font-size:14px;color:#3a4740;">Start with the rules and your first paddle. We have a plain-English guide to how the game works and a checklist you can take to the store.</p>
+        <p style="font-size:14px;color:var(--text-2);">Start with the rules and your first paddle. We have a plain-English guide to how the game works and a checklist you can take to the store.</p>
         <p style="margin-top:8px;"><a href="learn/how-to-play-pickleball.html">How to play →</a> &nbsp;·&nbsp; <a href="learn/how-to-choose-first-paddle.html">Choose a paddle →</a> &nbsp;·&nbsp; <a href="learn/pickleball-scoring-explained.html">Scoring →</a> &nbsp;·&nbsp; <a href="learn/pickleball-terms-glossary.html">Glossary →</a> &nbsp;·&nbsp; <a href="learn/indoor-vs-outdoor-balls.html">Balls →</a></p>
       </div>
       <div class="card">
         <h3>Ready to compare?</h3>
-        <p style="font-size:14px;color:#3a4740;">Browse independent, spec-based reviews of the paddles we test most — from budget starters to pro-level builds.</p>
+        <p style="font-size:14px;color:var(--text-2);">Browse independent, spec-based reviews of the paddles we test most — from budget starters to pro-level builds.</p>
         <p style="margin-top:8px;"><a href="paddles.html">See all paddle reviews →</a></p>
       </div>
     </div>
@@ -77,23 +100,23 @@
     <div class="grid cols-2">
       <div class="card">
         <h3>Best for beginners</h3>
-        <p style="font-size:14px;color:#3a4740;">Five paddles that are easiest to learn on, ranked by forgiveness and swing weight.</p>
-        <p style="margin-top:8px;"><a href="roundups/best-pickleball-paddles-for-beginners.html">Read the guide →</a></p>
+        <p style="font-size:14px;color:var(--text-2);">Five paddles that are easiest to learn on, ranked by forgiveness and swing weight.</p>
+        <p style="margin-top:8px;"><a class="more" href="roundups/best-pickleball-paddles-for-beginners.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
       <div class="card">
         <h3>Best under $100</h3>
-        <p style="font-size:14px;color:#3a4740;">The one paddle that holds under $100 at full price, plus the ones that land there on sale.</p>
-        <p style="margin-top:8px;"><a href="roundups/best-pickleball-paddles-under-100.html">Read the guide →</a></p>
+        <p style="font-size:14px;color:var(--text-2);">The one paddle that holds under $100 at full price, plus the ones that land there on sale.</p>
+        <p style="margin-top:8px;"><a class="more" href="roundups/best-pickleball-paddles-under-100.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
       <div class="card">
         <h3>Best for power</h3>
-        <p style="font-size:14px;color:#3a4740;">Four paddles built to out-drive opponents, from a $99.99 surprise to the top all-court builds.</p>
-        <p style="margin-top:8px;"><a href="roundups/best-pickleball-paddles-for-power.html">Read the guide →</a></p>
+        <p style="font-size:14px;color:var(--text-2);">Four paddles built to out-drive opponents, from a $99.99 surprise to the top all-court builds.</p>
+        <p style="margin-top:8px;"><a class="more" href="roundups/best-pickleball-paddles-for-power.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
       <div class="card">
         <h3>Best for control &amp; spin</h3>
-        <p style="font-size:14px;color:#3a4740;">Five paddles for dinks, drops, and topspin, ranked by touch and surface grit.</p>
-        <p style="margin-top:8px;"><a href="roundups/best-pickleball-paddles-for-control-and-spin.html">Read the guide →</a></p>
+        <p style="font-size:14px;color:var(--text-2);">Five paddles for dinks, drops, and topspin, ranked by touch and surface grit.</p>
+        <p style="margin-top:8px;"><a class="more" href="roundups/best-pickleball-paddles-for-control-and-spin.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
   </div>
@@ -104,11 +127,22 @@
 
 <footer class="site">
   <div class="wrap">
-    <div>© 2026 getrallypick · Pickleball paddle guides &amp; reviews</div>
-    <div style="flex-basis:100%;margin-top:8px;font-size:12px;color:#8a978f;">As an Amazon Associate, I earn from qualifying purchases.</div>
-    <div><a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a> · <a href="disclosure.html">Disclosure</a> · <a href="paddle-matcher.html">Paddle Matcher</a></div>
+    <div>&copy; 2026 getrallypick &middot; Pickleball paddle guides &amp; reviews</div>
+    <div style="flex-basis:100%;margin-top:8px;font-size:12px;color:var(--text-muted);">As an Amazon Associate, I earn from qualifying purchases.</div>
+    <div class="links"><a href="about.html">About</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="disclosure.html">Disclosure</a> &middot; <a href="paddle-matcher.html">Paddle Matcher</a></div>
   </div>
-</footer>
-
+</footer><div class="mobile-menu" id="mobileMenu">
+  <div class="mm-head">
+    <div class="mm-logo">getrally<span class="accent">pick</span></div>
+    <button class="mm-close" id="menuClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="paddle-matcher.html">Paddle Matcher</a>
+    <a href="paddles.html">Reviews</a>
+    <a href="learn/index.html">Learn</a>
+  </nav>
+  </div>
+</div>  <script src="assets/theme.js"></script>
 </body>
 </html>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-brand="volt" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Pickleball Paddle Reviews — getrallypick</title>
 <meta name="description" content="Independent, spec-based pickleball paddle reviews. From budget starters to pro-level builds, matched to real player needs.">
 <link rel="stylesheet" href="assets/style.css">
@@ -21,19 +22,41 @@
 <header class="site">
   <div class="wrap">
     <div class="logo">getrally<span class="accent">pick</span></div>
-    <nav class="main">
+        <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+<nav class="main">
       <a href="index.html">Home</a>
       <a href="paddle-matcher.html">Paddle Matcher</a>
       <a href="paddles.html" class="active">Reviews</a>
       <a href="learn/index.html">Learn</a>
     </nav>
+    <div class="switcher">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light or dark">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button></div>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <h1>Pickleball Paddle Reviews</h1>
-  <p>Spec-based, independent, and written for real players — not sponsored rankings.</p>
-  <a class="btn" href="paddle-matcher.html" style="margin-top:16px;display:inline-block;">Match me a paddle →</a>
+<section class="hero hero--split">
+  <div class="wrap">
+    <span class="eyebrow-tag" style="--d:0">Independent reviews</span>
+    <h1 style="--d:1">Pickleball Paddle <em>Reviews</em></h1>
+    <p style="--d:2">Spec-based, independent, and written for real players — not sponsored rankings.</p>
+    <div class="cta-row" style="--d:3">
+      <a class="btn btn-primary" href="paddle-matcher.html">Match me a paddle →</a>
+      <a class="btn btn-ghost" href="index.html">Back to Home</a>
+    </div>
+    <div class="hero-visual" style="--d:4">
+      <div class="stat-card">
+        <div class="stat"><span class="stat-num">60+</span><span class="stat-label">paddles scored on real specs — not on who pays us</span></div>
+        <div class="stat"><span class="stat-num">8</span><span class="stat-label">in-depth paddle reviews</span></div>
+        <div class="stat"><span class="stat-num">US only</span><span class="stat-label">pricing, court info and Amazon US links</span></div>
+      </div>
+      <span class="hero-badge">⚡ Independent. Not for sale.</span>
+    </div>
+  </div>
 </section>
 
 <div class="wrap">
@@ -48,7 +71,7 @@
         <div class="pb">JOOLA · All-court</div>
         <p class="d">The benchmark all-court paddle — power, control and spin in one. Our top pick for advancing players.</p>
         <div class="chips"><span class="chip">16mm</span><span class="chip">Carbon</span><span class="chip">All-court</span></div>
-        <p style="margin-top:10px;"><a href="reviews/joola-perseus-pro-iv.html">Read full review →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="reviews/joola-perseus-pro-iv.html">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
 
       <div class="pcard">
@@ -57,7 +80,7 @@
         <div class="pb">Selkirk · Control</div>
         <p class="d">Teaches placement over power. A safe, confidence-building first serious paddle for new players.</p>
         <div class="chips"><span class="chip">16mm</span><span class="chip">Forgiving</span><span class="chip">Control</span></div>
-        <p style="margin-top:10px;"><a href="reviews/selkirk-luxx-control-air-epic.html">Read full review →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="reviews/selkirk-luxx-control-air-epic.html">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
 
       <div class="pcard">
@@ -66,7 +89,7 @@
         <div class="pb">Vatic Pro · Value</div>
         <p class="d">Best carbon paddle under $100 — real performance without the pro price tag. Ideal first "real" paddle.</p>
         <div class="chips"><span class="chip">&lt;$100</span><span class="chip">Carbon</span><span class="chip">Value</span></div>
-        <p style="margin-top:10px;"><a href="reviews/vatic-pro-prism-flash.html">Read full review →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="reviews/vatic-pro-prism-flash.html">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
 
       <div class="pcard">
@@ -75,7 +98,7 @@
         <div class="pb">Six Zero · All-court</div>
         <p class="d">2026's all-court benchmark: explosive off the baseline, quick at the net, grit that holds 25+ hours.</p>
         <div class="chips"><span class="chip">Foam core</span><span class="chip">Fast</span></div>
-        <p style="margin-top:10px;"><a href="reviews/six-zero-black-opal.html">Read full review →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="reviews/six-zero-black-opal.html">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
 
       <div class="pcard">
@@ -84,7 +107,7 @@
         <div class="pb">Bread &amp; Butter · Forgiving</div>
         <p class="d">Almost impossible to mishit. The widebody face builds consistency while you learn mechanics.</p>
         <div class="chips"><span class="chip">Widebody</span><span class="chip">Forgiving</span></div>
-        <p style="margin-top:10px;"><a href="reviews/bread-butter-fat-boy-widebody.html">Read full review →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="reviews/bread-butter-fat-boy-widebody.html">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
 
       <div class="pcard">
@@ -93,7 +116,7 @@
         <div class="pb">Selkirk · Beginner</div>
         <p class="d">Lowest swing weight on test — whip it around at the kitchen. Best for older beginners or wrist issues.</p>
         <div class="chips"><span class="chip">Widebody</span><span class="chip">Lightest</span></div>
-        <p style="margin-top:10px;"><a href="reviews/selkirk-amped-s2-widebody.html">Read full review →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="reviews/selkirk-amped-s2-widebody.html">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
 
       <div class="pcard">
@@ -102,7 +125,7 @@
         <div class="pb">CRBN · Power</div>
         <p class="d">Raw T700 carbon tuned for pace — drives launch, spin holds, reach extends at the net. For advancing players.</p>
         <div class="chips"><span class="chip">Elongated</span><span class="chip">Power</span><span class="chip">Carbon</span></div>
-        <p style="margin-top:10px;"><a href="reviews/crbn-1x-power-series.html">Read full review →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="reviews/crbn-1x-power-series.html">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
 
       <div class="pcard">
@@ -111,11 +134,11 @@
         <div class="pb">Engage · Control &amp; Spin</div>
         <p class="d">The classic spin paddle: treated fiberglass face, huge sweet spot, buttery net touch. Wins with placement.</p>
         <div class="chips"><span class="chip">Widebody</span><span class="chip">Spin</span><span class="chip">Control</span></div>
-        <p style="margin-top:10px;"><a href="reviews/engage-encore-pro-mx-6.html">Read full review →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="reviews/engage-encore-pro-mx-6.html">Read full review <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
 
     </div>
-    <p class="muted" style="font-size:12.5px;color:#8a978f;margin-top:14px;">More full reviews publish weekly. The matcher already scores 20+ paddles instantly.</p>
+    <p class="muted" style="font-size:12.5px;color:var(--text-muted);margin-top:14px;">More full reviews publish weekly. The matcher already scores 60+ paddles instantly.</p>
   </div>
 
   <div class="section">
@@ -125,28 +148,28 @@
         <div class="pn">Best for beginners</div>
         <div class="pb">Start here if you're new</div>
         <p class="d">Five paddles that get out of your way while you learn, ranked by forgiveness and swing weight.</p>
-        <p style="margin-top:10px;"><a href="roundups/best-pickleball-paddles-for-beginners.html">Read the guide →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="roundups/best-pickleball-paddles-for-beginners.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
       <div class="pcard">
         <div class="pn">Under $100</div>
         <div class="pb">Best value picks</div>
         <p class="d">The one paddle that holds under $100 at full price, plus the ones that land there on sale.</p>
-        <p style="margin-top:10px;"><a href="roundups/best-pickleball-paddles-under-100.html">Read the guide →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="roundups/best-pickleball-paddles-under-100.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
       <div class="pcard">
         <div class="pn">For power</div>
         <div class="pb">Baseline drivers</div>
         <p class="d">Four paddles built to out-drive opponents, from a $99.99 surprise to the top all-court builds.</p>
-        <p style="margin-top:10px;"><a href="roundups/best-pickleball-paddles-for-power.html">Read the guide →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="roundups/best-pickleball-paddles-for-power.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
       <div class="pcard">
         <div class="pn">Control &amp; spin</div>
         <div class="pb">Net players</div>
         <p class="d">Five paddles for dinks, drops, and topspin, ranked by touch and surface grit.</p>
-        <p style="margin-top:10px;"><a href="roundups/best-pickleball-paddles-for-control-and-spin.html">Read the guide →</a></p>
+        <p style="margin-top:10px;"><a class="more" href="roundups/best-pickleball-paddles-for-control-and-spin.html">Read the guide <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
       </div>
     </div>
-    <p class="muted" style="font-size:12.5px;color:#8a978f;margin-top:14px;">New here? The <a href="paddle-matcher.html" style="color:#0c8a4e;">paddle matcher</a> scores 20+ paddles to your style in under a minute.</p>
+    <p class="muted" style="font-size:12.5px;color:var(--text-muted);margin-top:14px;">New here? The <a href="paddle-matcher.html" style="color:var(--brand-strong);">paddle matcher</a> scores 60+ paddles to your style in under a minute.</p>
   </div>
 
   <div class="note">Prices are typical US MSRP and shift with promotions — confirm on the retailer before buying. getrallypick may earn a commission via partner links; it never affects ratings. See <a href="disclosure.html">disclosure</a>.</div>
@@ -155,11 +178,22 @@
 
 <footer class="site">
   <div class="wrap">
-    <div>© 2026 getrallypick · Pickleball paddle guides &amp; reviews</div>
-    <div style="flex-basis:100%;margin-top:8px;font-size:12px;color:#8a978f;">As an Amazon Associate, I earn from qualifying purchases.</div>
-    <div><a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="contact.html">Contact</a> · <a href="disclosure.html">Disclosure</a> · <a href="paddle-matcher.html">Paddle Matcher</a></div>
+    <div>&copy; 2026 getrallypick &middot; Pickleball paddle guides &amp; reviews</div>
+    <div style="flex-basis:100%;margin-top:8px;font-size:12px;color:var(--text-muted);">As an Amazon Associate, I earn from qualifying purchases.</div>
+    <div class="links"><a href="about.html">About</a> &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="disclosure.html">Disclosure</a> &middot; <a href="paddle-matcher.html">Paddle Matcher</a></div>
   </div>
-</footer>
-
+</footer><div class="mobile-menu" id="mobileMenu">
+  <div class="mm-head">
+    <div class="mm-logo">getrally<span class="accent">pick</span></div>
+    <button class="mm-close" id="menuClose" aria-label="Close menu">&times;</button>
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="paddle-matcher.html">Paddle Matcher</a>
+    <a href="paddles.html" class="active">Reviews</a>
+    <a href="learn/index.html">Learn</a>
+  </nav>
+  </div>
+</div>  <script src="assets/theme.js"></script>
 </body>
 </html>
