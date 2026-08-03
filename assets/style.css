@@ -143,7 +143,7 @@ nav.main a.active{color:var(--brand)}
 }
 
 /* ============================================================ HERO (generic, centered) */
-.hero,.page-header,.learn-hero{position:relative;overflow:hidden;width:100%;color:#fff;text-align:center;padding:clamp(4rem,8vw,7rem) clamp(1rem,4vw,1.5rem);background:linear-gradient(160deg, oklch(17% .025 250 / .93), oklch(27% .03 250 / .86)), url("hero-bg.png") center/cover no-repeat}
+.hero,.page-header,.learn-hero{position:relative;overflow:hidden;width:100%;color:#fff;text-align:center;padding:clamp(4rem,8vw,7rem) clamp(1rem,4vw,1.5rem);background:linear-gradient(160deg, oklch(17% .025 250 / .93), oklch(27% .03 250 / .86)), url("hero-bg.webp") center/cover no-repeat}
 .hero::before,.page-header::before,.learn-hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg, transparent 0 46px, oklch(100% 0 0 / .05) 46px 47px);mix-blend-mode:overlay;pointer-events:none}
 .hero::after,.page-header::after,.learn-hero::after{content:"";position:absolute;width:55vw;height:55vw;left:-8vw;top:-18vw;border-radius:50%;background:radial-gradient(circle, oklch(85% .18 var(--brand-h) / .4), transparent 60%);pointer-events:none;animation:drift 15s var(--ease-out-expo) infinite alternate}
 @keyframes drift{from{transform:translate(0,0)}to{transform:translate(22vw,14vw)}}
